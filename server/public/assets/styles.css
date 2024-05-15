@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Menlo", "Monaco", "Lucida Console", "Liberation Mono", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Courier New", serif;
+  margin: 0;
+  background-color: gray;
+}
+
+header {
+  background-color: rgb(96, 85, 85);
+  height: 55px;
+  padding: 5px 20px;
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.header-btn {
+  color: white;
+  font-size: 20px;
+}
+
+button,
+input {
+  font-family: "Menlo", "Monaco", "Lucida Console", "Liberation Mono", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Courier New", serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: slategrey;
+  border-radius: 5px;
+}
+
+input {
+  padding: 5px;
+  font-size: 20px;
+  min-width: 120px;
+}
+
+#create-usr-header-btn:hover {
+  background-color: seagreen;
+}
+
+#get-usr-header-btn:hover,
+#get-all-usr-header-btn:hover {
+  background-color: rgb(144, 144, 15);
+}
+
+#update-usr-header-btn:hover {
+  background-color: rgb(15, 144, 144);
+}
+
+#dlt-usr-header-btn:hover {
+  background-color: rgb(144, 15, 15);
+}
+
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.input-field-item {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.response-wrapper {
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.response-title {
+  margin: 10px auto;
+  text-align: center;
+  color: white;
+}
+
+.response-wrapper {
+  background-color: rgb(100, 100, 100);
+}
+
+.response {
+  min-height: 250px;
+  min-width: 500px;
+  max-width: 750px;
+  background-color: rgb(39, 38, 38);
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 17px;
+  color: rgb(50, 255, 0);
+  border-radius: 5px;
+}
+
+.response p {
+  margin: 5px;
+  line-height: 1.5;
+  letter-spacing: 1.15px;
+}

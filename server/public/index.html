@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script src=".//assets/scripts/ui_behavior.js" defer></script>
+    <script src="./assets/scripts/form_handlers.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <button class="header-btn" id="create-usr-header-btn">Create User</button>
+      <button class="header-btn" id="get-all-usr-header-btn">Get All Users</button>
+      <button class="header-btn" id="get-usr-header-btn">Get User By ID</button>
+      <button class="header-btn" id="update-usr-header-btn">Change User</button>
+      <button class="header-btn" id="dlt-usr-header-btn">Delete User</button>
+    </header>
+    <div class="form-wrapper" id="forms-wrapper">
+      <div class="form-style" id="create-user-form-wrapper">
+        <h2>Create User</h2>
+        <form id="create-user-form" class="form-wrapper">
+          <input type="text" name="name" placeholder="Full Name" class="input-field-item" />
+          <input type="email" name="email" placeholder="Email" class="input-field-item" />
+          <input type="text" name="age" placeholder="Age" class="input-field-item" />
+          <input type="submit" value="Create User" />
+        </form>
+      </div>
+      <div class="form-style form-wrapper" id="get-all-users-form-wrapper">
+        <h2>Get All Users</h2>
+        <form id="get-all-usrs-form" class="form-wrapper">
+          <input type="submit" value="GET" />
+        </form>
+      </div>
+      <div class="form-style" id="get-user-by-id-form-wrapper">
+        <h2>Get User By ID</h2>
+        <form class="form-wrapper" id="get-usr-by-id-form">
+          <input type="text" name="id" placeholder="User ID" class="input-field-item" />
+          <input type="submit" value="GET User" />
+        </form>
+      </div>
+      <div class="form-style" id="update-user-form-wrapper">
+        <h2>Update User By ID</h2>
+        <form class="form-wrapper" id="update-usr-by-id-form">
+          <input type="text" name="id" placeholder="User ID" class="input-field-item" />
+          <input type="text" name="name" placeholder="Full Name" class="input-field-item" />
+          <input type="email" name="email" placeholder="Email" class="input-field-item" />
+          <input type="age" name="age" placeholder="Age" class="input-field-item" />
+          <input type="submit" value="Update User" />
+        </form>
+      </div>
+      <div class="form-style" id="delete-user-form-wrapper">
+        <h2>Delete User</h2>
+        <form class="form-wrapper" id="dlt-usr-by-id-form">
+          <input type="text" name="id" placeholder="User ID" class="input-field-item" />
+          <input type="submit" value="Delete" />
+        </form>
+      </div>
+    </div>
+    <div class="response-wrapper">
+      <h2 class="response-title">Response</h2>
+      <div id="response" class="response"></div>
+    </div>
+  </body>
+</html>
