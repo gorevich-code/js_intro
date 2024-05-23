@@ -47,6 +47,15 @@ $ npm run start:prod
 
 ## Test
 
+Send POST request to "http://localhost:3000/message/" with JSON body with "type" and "message" strings.abs
+```
+{
+    "type":"sms",
+    "message": "email@example.com"
+}
+```
+
+
 ```bash
 # unit tests
 $ npm run test
